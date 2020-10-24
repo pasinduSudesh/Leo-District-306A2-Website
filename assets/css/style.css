@@ -10,15 +10,17 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  /* color: #444444; */
+  color: black;
+  background-color:rgba(0, 0,0, 0.8);
 }
 
 a {
-  color: #ed502e;
+  color:  #8b6c76;
 }
 
 a:hover {
-  color: #f1775d;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -37,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #000;
 }
 
 #preloader:before {
@@ -105,10 +107,11 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: rgb(0,0,0,0.8);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
 }
 
 #header.header-scrolled {
@@ -163,14 +166,15 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #0b2341;
+  color: #ffffff;
   transition: 0.3s;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #ed502e;
+  /* color: #7cb341; */
+  color: #ebb12e;
 }
 
 .nav-menu .drop-down ul {
@@ -182,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
-  background: #fff;
+  background:black;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -253,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Get Startet Button */
 .get-started-btn {
   margin-left: 25px;
-  background: #ed502e;
+  background: #7cb341;
   color: #fff;
   border-radius: 4px;
   padding: 8px 25px 9px 25px;
@@ -264,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .get-started-btn:hover {
-  background: #ef6445;
+  background:#3b65a7 ;
   color: #fff;
 }
 
@@ -409,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(4, 12, 21, 0.5);
+  background-color: rgba(4, 12, 21, 0.3);
 }
 
 #hero .carousel-container {
@@ -499,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-indicators li {
   cursor: pointer;
-  background: #fff;
+  background: #000;
   overflow: hidden;
   border: 0;
   width: 12px;
@@ -511,7 +515,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #ed502e;
+  background: #7cb341;
 }
 
 #hero .btn-get-started {
@@ -527,7 +531,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  background: #ed502e;
+  background: #7cb341;
   margin-top: 15px;
 }
 
@@ -571,7 +575,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f6f9fd;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .section-title {
@@ -586,7 +590,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #7cb341 ;
   font-family: "Poppins", sans-serif;
 }
 
@@ -595,18 +599,18 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #f38b74;
+  background: #7cb341 ;
   margin: 4px 10px;
 }
 
-.section-title p {
+.section-title h3 {
   margin: 0;
   margin: 0;
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0f2f57;
+  color:#1c97cf;
 }
 
 /*--------------------------------------------------------------
@@ -636,7 +640,7 @@ section {
   left: 0;
   top: 2px;
   font-size: 20px;
-  color: #ed502e;
+  color: #7cb341;
   line-height: 1;
 }
 
@@ -671,10 +675,13 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding-top: 0;
+  margin: 0;
+  /* position: absolute; */
+  top: 50%;
 }
 
 .counts .count-box {
+  background-color: #3b65a7 ;
   box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
   padding: 30px;
   width: 100%;
@@ -683,7 +690,7 @@ section {
 .counts .count-box i {
   display: block;
   font-size: 30px;
-  color: #ed502e;
+  color: #edd12e;
   float: left;
 }
 
@@ -692,7 +699,7 @@ section {
   line-height: 24px;
   display: block;
   font-weight: 700;
-  color: #0b2341;
+  color: #fff;
   margin-left: 50px;
 }
 
@@ -707,7 +714,7 @@ section {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #164682;
+  color: #7cb341  ;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
@@ -721,7 +728,12 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .why-us {
-  padding: 0;
+  padding: 10px 10px;
+  background-color: rgba(11, 35, 65, 0.1)
+}
+
+.why-us {
+  padding: 10px 10px;
 }
 
 .why-us .content {
@@ -731,7 +743,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #123a6d;
+  color: #edd12e;
 }
 
 .why-us .content h4 {
@@ -742,7 +754,7 @@ section {
 
 .why-us .content p {
   font-size: 15px;
-  color: #848484;
+  color: #fff;
 }
 
 .why-us .video-box {
@@ -768,7 +780,7 @@ section {
 
 .why-us .accordion-list li {
   padding: 20px;
-  background: #fff;
+  background: #3b65a7;
   border-radius: 4px;
 }
 
@@ -781,11 +793,11 @@ section {
   font-weight: 500;
   padding-right: 30px;
   outline: none;
-  color: #0b2341;
+  color: #fff;
 }
 
 .why-us .accordion-list span {
-  color: #ed502e;
+  color: #edd12e;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
@@ -812,7 +824,7 @@ section {
 }
 
 .why-us .accordion-list a.collapsed:hover {
-  color: #ed502e;
+  color:  #edd12e;
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
@@ -1108,7 +1120,8 @@ section {
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(0, 0, 0, 0.5); */
   padding: 15px;
 }
 
@@ -1171,7 +1184,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: rgba(0, 0, 0, 0.9);
   padding: 60px 0;
 }
 
@@ -1181,7 +1194,7 @@ section {
   text-align: center;
   border-radius: 5px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.4);
 }
 
 .team .member .member-img {
@@ -1198,19 +1211,19 @@ section {
   opacity: 0;
   transition: ease-in-out 0.3s;
   text-align: center;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #493c3e;
+  color: rgb(185, 180, 180);
   margin: 0 10px;
   padding-top: 8px;
   display: inline-block;
 }
 
 .team .member .social a:hover {
-  color: #e43c5c;
+  color: #7cb341;
 }
 
 .team .member .social i {
@@ -1537,7 +1550,7 @@ section {
 /*}*/
 
 .contact-section .contact-info p a {
-  color: #6e5773; }
+  color: #3b65a7; }
 
 .contact-section .box {
   width: 100%;
@@ -1548,8 +1561,10 @@ section {
 .contact-section .box .icon {
   width: 100px;
   height: 100px;
-  background: #6e5773;
-  margin: 0 auto;
+  /* background:#3b65a7; */
+  background: rgb(10,2,73);
+  background: linear-gradient(45deg, rgba(10,2,73,1) 0%, rgba(0,48,255,1) 100%);
+   margin: 0 auto;
   margin-bottom: 2em;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1565,6 +1580,21 @@ section {
 
 .contact-section .contact-form {
   width: 100%; }
+
+.contact-section .contact-icon a {
+    color: #edd12e;
+  }
+
+  .contact-section .contact-icon a:hover {
+    color: #f1e07e;
+  }
+.contact-icon .icon-description{
+color: rgba(255, 255, 255, 0.8);
+}
+.contact-icon .icon-d{
+color: rgb(197, 204, 201);
+font-family:  sans-serif;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1697,6 +1727,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
+  background: rgba(0, 0, 0, 0.50);
   padding-bottom: 40px;
 }
 
@@ -1718,13 +1749,14 @@ section {
 
 .services .card-img img {
   max-width: 100%;
+  max-height: 100%;
   transition: all 0.3s ease-in-out;
 }
 
 .services .card-body {
   z-index: 10;
-  background: #fff;
-  border-top: 4px solid #fff;
+  background:#3b65a7;
+  border-top: 4px solid #7cb341;
   padding: 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   margin-top: -60px;
@@ -1738,16 +1770,16 @@ section {
 }
 
 .services .card-title a {
-  color: #213b52;
+  color:   #7cb341;
   transition: 0.3s;
 }
 
 .services .card-text {
-  color: #5e5e5e;
+  color: #000;
 }
 
 .services .read-more a {
-  color: #777777;
+  color: #7cb341;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
